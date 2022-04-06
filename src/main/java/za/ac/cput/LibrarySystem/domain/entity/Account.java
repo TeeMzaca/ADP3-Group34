@@ -150,13 +150,3 @@ public class Account {
                 '}';
     }
 }
-
-
-/*Account account = new Account.Builder(1)
-            .theirFirstName("James")
-            .theirLastName("Hardly")
-            .theirDOB("1991-10-01")
-            .theirHomeAddress("123 Green Road")
-            .accountDateOpened("2010-11-12")
-            .accountStatus("Active")
-            .build();*/
