@@ -77,7 +77,7 @@ public class Author {
             return this;
         }
 
-        public Builder setDate(String birthDate) {
+        public Builder setBirthDate(String birthDate) {
             this.birthDate = birthDate;
             return this;
         }
