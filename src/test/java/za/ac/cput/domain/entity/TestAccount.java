@@ -1,3 +1,4 @@
+//author Ethan Swart 220126283
 package za.ac.cput.domain.entity;
 
 import za.ac.cput.LibrarySystem.domain.entity.Account;
@@ -11,7 +12,7 @@ public class TestAccount {
             .theirLastName("Hardly")
             .theirDOB("1991-10-01")
             .theirHomeAddress("123 Green Road")
-            .accountDateOpened("2010-11-12")
+            .accountDateOpened("2010-11-12").accountStatus("Open")
             .build();
 
         System.out.println(account.toString());

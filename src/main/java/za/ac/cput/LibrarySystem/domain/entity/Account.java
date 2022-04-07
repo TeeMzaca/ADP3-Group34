@@ -1,3 +1,4 @@
+//author Ethan Swart 220126283
 package za.ac.cput.LibrarySystem.domain.entity;
 
 import java.util.Arrays;
@@ -61,6 +62,7 @@ public class Account {
             return this;
         }
 
+        //The build method that returns an account object.
         public Account build() {
             Account account = new Account();
             account.id = this.id;
@@ -70,6 +72,7 @@ public class Account {
             account.homeAddress = this.homeAddress;
             account.dateOpened = this.dateOpened;
             account.status = this.status;
+
             return account;
         }
     }
@@ -150,13 +153,3 @@ public class Account {
                 '}';
     }
 }
-
-
-/*Account account = new Account.Builder(1)
-            .theirFirstName("James")
-            .theirLastName("Hardly")
-            .theirDOB("1991-10-01")
-            .theirHomeAddress("123 Green Road")
-            .accountDateOpened("2010-11-12")
-            .accountStatus("Active")
-            .build();*/
