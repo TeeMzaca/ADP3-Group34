@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="LibrarySystem" />
+        <module name="ADP3-Group34" />
       </profile>
     </annotationProcessing>
   </component>

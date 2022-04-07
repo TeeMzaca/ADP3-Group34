@@ -61,6 +61,7 @@ public class Account {
             return this;
         }
 
+        //The build method that returns an account object.
         public Account build() {
             Account account = new Account();
             account.id = this.id;
@@ -70,6 +71,7 @@ public class Account {
             account.homeAddress = this.homeAddress;
             account.dateOpened = this.dateOpened;
             account.status = this.status;
+
             return account;
         }
     }
