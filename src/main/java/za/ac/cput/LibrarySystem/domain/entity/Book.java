@@ -1,6 +1,6 @@
 package za.ac.cput.LibrarySystem.domain.entity;
 /*
-        Builder Entity: Book
+        Entity for Book
         Student: Lana Africa (216166640)
         Date: 7 April 2022
  */
