@@ -9,7 +9,7 @@ package za.ac.cput.LibrarySystem.domain.entity;
 public class Film {
 
     //Attributes
-    private int id;
+    private String id;
     private String title;
     private String releaseDate;
     private int timeLength;
@@ -17,13 +17,17 @@ public class Film {
     private String studioCompany;
 
     //Constructor
-
+    private Film(Film.Builder builder){
+        this.id = builder.id;
+        this.title = builder.title;
+        this.releaseDate = builder.releaseDate;
+    }
     //My Getters and Setters
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -82,7 +86,7 @@ public class Film {
     public static class Builder{
 
         //Attributes under the builder
-        private int id;
+        private String id;
         private String title;
         private String releaseDate;
         private int timeLength;
@@ -90,7 +94,7 @@ public class Film {
         private String studioCompany;
 
         //Setting everything
-        public Builder setId(int id) {
+        public Builder setId(String id) {
             this.id = id;
             return this;
         }
@@ -118,6 +122,17 @@ public class Film {
         public Builder setStudioCompany(String studioCompany) {
             this.studioCompany = studioCompany;
             return this;
+        }
+
+        public Film.Builder copy(Film film){
+            this.id = film.id;
+            this.title = film.title;
+            this.releaseDate = film.releaseDate;
+            return this;
+        }
+
+        public Film build(){
+            return new Film(this); //We need to create this constructor
         }
     }
 }
