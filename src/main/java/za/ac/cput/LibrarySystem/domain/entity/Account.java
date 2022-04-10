@@ -1,12 +1,10 @@
-//File Descriptor    : Account.java
-//Program Descriptor : This is an account domain
-//Author             : Tumelo Mzaca (206006330)
-//Date Created       : 07-04-2022
-
-
+//author Ethan Swart 220126283
 package za.ac.cput.LibrarySystem.domain.entity;
 
-
+/*
+    Account.java
+    Student: Ethan Swart (220126283)
+ */
 
 import java.util.Arrays;
 import java.util.Date;
@@ -93,6 +91,10 @@ public class Account {
     public int getId() {
         return id;
     }
+    public String getIDString(){
+        return Integer.toString(id);
+    }
+
 
     public String getFirstName() {
         return firstName;

@@ -1,9 +1,7 @@
 //author Ethan Swart 220126283
-package za.ac.cput.domain.entity;
+package za.ac.cput.LibrarySystem.domain.entity;
 
 import za.ac.cput.LibrarySystem.domain.entity.Item;
-
-//push
 
 public class TestItem {
 
@@ -19,7 +17,7 @@ public class TestItem {
         System.out.println(item.toString());
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         TestBuilder();
-    }
+    }*/
 }
