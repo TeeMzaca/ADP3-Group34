@@ -8,7 +8,7 @@ package za.ac.cput.LibrarySystem.domain.entity;
 
 public class Film {
 
-    //Attributes
+    //Attributes (push)
     private String id;
     private String title;
     private String releaseDate;
