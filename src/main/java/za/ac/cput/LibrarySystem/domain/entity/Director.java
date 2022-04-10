@@ -9,7 +9,7 @@ package za.ac.cput.LibrarySystem.domain.entity;
 public class Director {
 
     //Attributes
-    private int id;
+    private String id;
     private String firstName;
     private String lastName;
     private String birthDate;
@@ -22,11 +22,11 @@ public class Director {
         this.lastName = builder.lastName;
     }
     //Getters and Setter
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -76,14 +76,14 @@ public class Director {
     public static class Builder{
 
         //Attributes under the builder
-        private int id;
+        private String id;
         private String firstName;
         private String lastName;
         private String birthDate;
         private String bio;
 
         //Setters
-        public Builder setId(int id) {
+        public Builder setId(String id) {
             this.id = id;
             return this;
         }
