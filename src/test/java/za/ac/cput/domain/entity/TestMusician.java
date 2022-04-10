@@ -2,7 +2,7 @@ package za.ac.cput.domain.entity;
 /*
         TestMusician.java
         Entity for Musician Test
-        Author: Mogammad Faeedh Daniels (219174288)
+        Author: Mogammad Faeedh Daniels ( 219174288 )
         Date: 8 April 2022
  */
 import za.ac.cput.LibrarySystem.domain.entity.Musician;
