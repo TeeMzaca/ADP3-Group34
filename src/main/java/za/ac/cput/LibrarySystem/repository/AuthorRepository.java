@@ -7,10 +7,12 @@ package za.ac.cput.LibrarySystem.repository;
  */
 
 import za.ac.cput.LibrarySystem.domain.entity.Author;
+import za.ac.cput.LibrarySystem.repository.impl.IAuthorRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 
-public class AuthorRepository implements IAuthorRepository{
+public class AuthorRepository implements IAuthorRepository {
     public static AuthorRepository repository = null;
     private Set<Author> authorDB = null;
 

@@ -12,7 +12,8 @@ public class TestAccount {
             .theirLastName("Hardly")
             .theirDOB("1991-10-01")
             .theirHomeAddress("123 Green Road")
-            .accountDateOpened("2010-11-12").accountStatus("Open")
+            .accountDateOpened("2010-11-12")
+                .accountStatus("Open")
             .build();
 
         System.out.println(account.toString());
