@@ -11,7 +11,7 @@ public class directorFactory {
     //creating director objects
     public static Director createDirector(String id, String firstName, String lastName){
 
-        //firstName and lastName validation
+        //firstName and lastName validation (evaluation)
         if(firstName.equals("") || firstName == null)
             return null;
         if(firstName.isEmpty() || firstName == null)
