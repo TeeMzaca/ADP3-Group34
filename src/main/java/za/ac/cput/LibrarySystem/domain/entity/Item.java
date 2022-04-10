@@ -1,6 +1,11 @@
 //author Ethan Swart 220126283
 package za.ac.cput.LibrarySystem.domain.entity;
 
+/*
+    Item.java
+    Student: Ethan Swart (220126283)
+ */
+
 public class Item {
 
     //Attributes for Item class

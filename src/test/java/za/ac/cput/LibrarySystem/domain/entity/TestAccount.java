@@ -1,5 +1,5 @@
 //author Ethan Swart 220126283
-package za.ac.cput.domain.entity;
+package za.ac.cput.LibrarySystem.domain.entity;
 
 import za.ac.cput.LibrarySystem.domain.entity.Account;
 

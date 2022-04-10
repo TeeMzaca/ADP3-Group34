@@ -1,4 +1,4 @@
-package za.ac.cput.domain.entity;
+package za.ac.cput.LibrarySystem.domain.entity;
 /*
         TestMusician.java
         Entity for Musician Test
