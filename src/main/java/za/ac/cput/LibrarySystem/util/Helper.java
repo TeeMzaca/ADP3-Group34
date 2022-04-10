@@ -3,7 +3,7 @@ package za.ac.cput.LibrarySystem.util;
 import java.util.UUID;
 
 public class Helper {
-    //A group must have only one helper class
+    //A group must have only one helper class (push)
     /**
      //To test if null or empty
     public static boolean isNuLLorEmpty(String s){
