@@ -1,3 +1,8 @@
+//File Descriptor    : directorFactory.java
+//Program Descriptor : This is a director Factory
+//Author             : Tumelo Mzaca (206006330)
+//Date Created       : 07-04-2022
+
 package za.ac.cput.LibrarySystem.factory;
 
 import za.ac.cput.LibrarySystem.domain.entity.Director;

@@ -1,3 +1,8 @@
+//File Descriptor    : directoryRepository.java
+//Program Descriptor : This is a director Repository
+//Author             : Tumelo Mzaca (206006330)
+//Date Created       : 07-04-2022
+
 package za.ac.cput.LibrarySystem.repository;
 
 import za.ac.cput.LibrarySystem.domain.entity.Director;
