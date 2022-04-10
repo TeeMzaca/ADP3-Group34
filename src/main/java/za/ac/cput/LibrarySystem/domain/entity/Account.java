@@ -1,6 +1,11 @@
 //author Ethan Swart 220126283
 package za.ac.cput.LibrarySystem.domain.entity;
 
+/*
+    Account.java
+    Student: Ethan Swart (220126283)
+ */
+
 import java.util.Arrays;
 import java.util.Date;
 
@@ -86,6 +91,10 @@ public class Account {
     public int getId() {
         return id;
     }
+    public String getIDString(){
+        return Integer.toString(id);
+    }
+
 
     public String getFirstName() {
         return firstName;
