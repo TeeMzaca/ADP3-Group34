@@ -2,7 +2,7 @@ package za.ac.cput.LibrarySystem.domain.entity;
 /*
         Musician.java
         Entity for Musician
-        Author: Mogammad Faeedh Daniels (219174288)
+        Author: Mogammad Faeedh Daniels ( 219174288 )
         Date: 8 April 2022
  */
 public class Musician {
