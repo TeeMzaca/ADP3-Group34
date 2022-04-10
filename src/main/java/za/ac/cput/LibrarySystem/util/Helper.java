@@ -1,4 +1,5 @@
 package za.ac.cput.LibrarySystem.util;
+
 import org.apache.commons.validator.routines.EmailValidator;
 
 import java.util.Random;
@@ -6,7 +7,7 @@ import java.util.Random;
 public class Helper {
 
     public static boolean isNullorEmpty(String s){
-        return (s == null || s.isBlank());
+        return (s == null || s.equals ("") || s.isEmpty()|| s.equalsIgnoreCase("null"));
     }
 
     public static boolean isValidEmail(String email){
@@ -28,5 +29,6 @@ public class Helper {
                 .toString();
 
         return generatedString;
+
     }
 }
