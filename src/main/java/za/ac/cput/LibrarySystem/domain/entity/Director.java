@@ -8,7 +8,7 @@ package za.ac.cput.LibrarySystem.domain.entity;
 
 public class Director {
 
-    //Attributes
+    //Attributes (push)
     private String id;
     private String firstName;
     private String lastName;
