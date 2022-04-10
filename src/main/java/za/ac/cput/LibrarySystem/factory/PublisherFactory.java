@@ -1,32 +1,36 @@
 package za.ac.cput.LibrarySystem.factory;
+/*
+        Publisher Factory
+        Student: Darryll Merkeur (220253595)
+        Date: 8 April 2022
+*/
 
 import za.ac.cput.LibrarySystem.domain.entity.Publisher;
-import za.ac.cput.LibrarySystem.util.Helper;
-
-
 
 public class PublisherFactory {
-    public static Publisher createBook(String id, String companyName, String bio, String startDate){
+    public static Publisher createPublisher(Integer id, String companyName, String bio, String startDate){
 
-        if(Helper.isNullorEmpty(id) || Helper.isNullorEmpty(companyName) ||Helper.isNullorEmpty(bio)|| Helper.isNullorEmpty(startDate)){
+        if(id.equals("")){
             return null;
         }
 
-        if (bio == null){
+        if(companyName.equals("")){
             return null;
         }
-        if (startDate == null){
+
+        if(bio.equals("")){
             return null;
         }
+        if(startDate.equals("")){
+            return null;
+        }
+
         return new Publisher.Builder()
                 .setId(id)
                 .setCompanyName(companyName)
                 .setBio(bio)
                 .setStartDate(startDate)
                 .build();
-
     }
-
-
-    }
+}
 
