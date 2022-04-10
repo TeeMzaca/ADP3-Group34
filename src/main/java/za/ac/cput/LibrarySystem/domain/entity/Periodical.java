@@ -1,23 +1,24 @@
 package za.ac.cput.LibrarySystem.domain.entity;
+/*
 
-import java.util.Date;
-
-
+        Student: Darryll Merkeur (220253595)
+        Date: 8 April 2022
+*/
 public class Periodical {
 
-    private int id;
+    private int  id;
     private String title;
-    private Date releaseDate;
+    private String releaseDate;
     private String description;
-    private String gendre;
+    private String genre;
     private int numberOfPages;
 
-    private Periodical(Builder builder){
+    private Periodical(Periodical.Builder builder){
         this.id = builder.id;
         this.title = builder.title;
         this.releaseDate = builder.releaseDate;
         this.description = builder.description;
-        this.gendre = builder.gendre;
+        this.genre = builder.genre;
         this.numberOfPages = builder.numberOfPages;
 
     }
@@ -38,11 +39,11 @@ public class Periodical {
         this.title = title;
     }
 
-    public Date getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(Date releaseDate) {
+    public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
 
@@ -54,12 +55,12 @@ public class Periodical {
         this.description = description;
     }
 
-    public String getGendre() {
-        return gendre;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setGendre(String gendre) {
-        this.gendre = gendre;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
     public int getNumberOfPages() {
@@ -77,7 +78,7 @@ public class Periodical {
                 ", title='" + title + '\'' +
                 ", releaseDate=" + releaseDate +
                 ", description='" + description + '\'' +
-                ", gendre='" + gendre + '\'' +
+                ", genre='" + genre + '\'' +
                 ", numberOfPages=" + numberOfPages +
                 '}';
     }
@@ -85,9 +86,9 @@ public class Periodical {
     public static class Builder {
         private int id;
         private String title;
-        private Date releaseDate;
+        private String releaseDate;
         private String description;
-        private String gendre;
+        private String genre;
         private int numberOfPages;
 
         public Builder setId(int id) {
@@ -100,7 +101,7 @@ public class Periodical {
             return this;
         }
 
-        public Builder setReleaseDate(Date releaseDate) {
+        public Builder setReleaseDate(String releaseDate) {
             this.releaseDate = releaseDate;
             return this;
         }
@@ -111,7 +112,7 @@ public class Periodical {
         }
 
         public Builder setGendre(String gendre) {
-            this.gendre = gendre;
+            this.genre = genre;
             return this;
         }
 
@@ -125,10 +126,11 @@ public class Periodical {
             this.title = periodical.title;
             this.releaseDate = periodical.releaseDate;
             this.description = periodical.description;
-            this.gendre = periodical.gendre;
+            this.genre = periodical.genre;
             this.numberOfPages = periodical.numberOfPages;
             return this;
         }
+
 
         public Periodical build(){
             return new Periodical(this);

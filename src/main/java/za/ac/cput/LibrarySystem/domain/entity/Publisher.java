@@ -1,13 +1,15 @@
 package za.ac.cput.LibrarySystem.domain.entity;
+/*
 
-import java.util.Date;
-
+        Student: Darryll Merkeur (220253595)
+        Date: 8 April 2022
+*/
 public class Publisher {
 
     private int id;
     private String companyName;
     private String bio;
-    private Date startDate;
+    private String startDate;
 
     private Publisher(Publisher.Builder builder){
         this.id = builder.id;
@@ -41,11 +43,11 @@ public class Publisher {
         this.bio = bio;
     }
 
-    public Date getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(Date startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
@@ -63,7 +65,7 @@ public class Publisher {
         private int id;
         private String companyName;
         private String bio;
-        private Date startDate;
+        private String startDate;
 
         public Builder setId(int id) {
             this.id = id;
@@ -80,7 +82,7 @@ public class Publisher {
             return this;
         }
 
-        public Builder setStartDate(Date startDate) {
+        public Builder setStartDate(String startDate) {
             this.startDate = startDate;
             return this;
         }
