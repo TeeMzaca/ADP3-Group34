@@ -5,6 +5,17 @@ import za.ac.cput.LibrarySystem.domain.entity.Director;
 public class directorFactory {
     //creating director objects
     public static Director createDirector(String id, String firstName, String lastName){
+        //firstName and lastName validation
+        if(firstName.equals("") || firstName == null)
+            return null;
+        if(firstName.isEmpty() || firstName == null)
+            return null;
+
+        if(lastName.equals("") || lastName == null)
+            return null;
+        if(lastName.isEmpty() || lastName == null)
+            return null;
+
         return new Director.Builder().setId(id)
                 .setFirstName(firstName)
                 .setLastName(lastName)
