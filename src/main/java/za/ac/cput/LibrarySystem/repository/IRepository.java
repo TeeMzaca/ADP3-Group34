@@ -6,4 +6,3 @@ public interface IRepository <J, ID>{
     J update(J t);
     boolean delete(ID id);
 }
-
