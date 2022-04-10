@@ -71,6 +71,10 @@ public class MusicAlbum {
     }
 
     // Getters and Setters
+    public String getIdString() {
+        return Integer.toString(id);
+    }
+
     public int getId() {
         return id;
     }

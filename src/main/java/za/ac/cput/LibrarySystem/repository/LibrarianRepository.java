@@ -3,11 +3,13 @@ package za.ac.cput.LibrarySystem.repository;
 //Author Adrian Bennett 214075982
 
 import za.ac.cput.LibrarySystem.domain.entity.Librarian;
+import za.ac.cput.LibrarySystem.repository.impl.ILibrarianRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class LibrarianRepository implements ILibrarianRepository {
-    public static LibrarianRepositoryrepository = null;
+    public static LibrarianRepository repository = null;
     private Set<Librarian> librarianDB = null;
 
 
@@ -21,7 +23,7 @@ public class LibrarianRepository implements ILibrarianRepository {
     }
 
     @Override
-    public Library create(Librarian librarian) {
+    public Librarian create(Librarian librarian) {
         boolean success = librarianDB.add(librarian);
         if (!success)
             return null;
@@ -30,7 +32,7 @@ public class LibrarianRepository implements ILibrarianRepository {
 
     @Override
     public Librarian update(Librarian librarian) {
-        Librarian oldBio = read(librarian.getBio());
+        Librarian oldBio = read(librarian.getIdString());
         if (oldBio != null) {
             librarianDB.remove(oldBio);
             librarianDB.add(librarian);
@@ -43,7 +45,7 @@ public class LibrarianRepository implements ILibrarianRepository {
     @Override
     public Librarian read(String id) {
         Librarian librarian = librarianDB.stream()
-                .filter(e -> e.getId().equals(id))
+                .filter(e -> e.getIdString().equals(id))
                 .findAny().orElse(null);
         return librarian;
     }

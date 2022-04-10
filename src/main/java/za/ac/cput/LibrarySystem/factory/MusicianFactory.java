@@ -11,7 +11,7 @@ import za.ac.cput.LibrarySystem.util.Helper;
 
 public class MusicianFactory {
 
-    public static Muscian createMusician(Integer id, String name, String birthDate, String bio){
+    public static Musician createMusician(Integer id, String name, String birthDate, String bio){
         
         if(Helper.isNullorEmpty(name) || Helper.isNullorEmpty(birthDate) || Helper.isNullorEmpty(bio)){
             return null;
@@ -20,11 +20,10 @@ public class MusicianFactory {
             return null;
         }
 
-        return new Musician.Builder()
-                .setID(id)
-                .setName(name)
-                .setBirthDate(birthDate)
-                .setBio(bio)
+        return new Musician.Builder(id)
+                .Name(name)
+                .BirthDate(birthDate)
+                .Bio(bio)
                 .build();
     }
 }

@@ -3,6 +3,8 @@ package za.ac.cput.LibrarySystem.repository;
 //Author Adrian Bennett 214075982
 
 import za.ac.cput.LibrarySystem.domain.entity.Library;
+import za.ac.cput.LibrarySystem.repository.impl.ILibraryRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -30,9 +32,9 @@ public class LibraryRepository implements ILibraryRepository {
 
     @Override
     public Library update(Library library) {
-        Author oldBio = read(library.getBio());
-        if (oldBio != null) {
-            libraryDB.remove(oldBio);
+        Library oldLibrary = read(library.getIdString());
+        if (oldLibrary != null) {
+            libraryDB.remove(oldLibrary);
             libraryDB.add(library);
             return library;
         }

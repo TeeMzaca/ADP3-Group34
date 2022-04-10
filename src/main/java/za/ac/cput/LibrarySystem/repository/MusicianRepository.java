@@ -43,7 +43,7 @@ public class MusicianRepository implements IMusicianRepository {
 
         @Override
         public Musician update(Musician musician) {
-            Musician oldBio = read(muscian.getBio());
+            Musician oldBio = read(musician.getBio());
             if (oldBio != null) {
                 musicianDB.remove(oldBio);
                 musicianDB.add(musician);
@@ -54,7 +54,7 @@ public class MusicianRepository implements IMusicianRepository {
 
         @Override
         public boolean delete(String bio) {
-            musician musicianDelete = read(bio);
+            Musician musicianDelete = read(bio);
             if (musicianDelete == null)
                 return false;
             musicianDB.remove(musicianDelete);

@@ -25,13 +25,12 @@ public class MusicAlbumFactory {
         if (timeLength == null){
             return null;
         }
-        return new MusicAlbum.Builder()
-                .setId(id)
-                .setTitle(title)
-                .setPublisher(publisher)
-                .setPublicationDate(publicationDate)
-                .setValue(value)
-                .setTimeLength(timeLength)
+        return new MusicAlbum.Builder(id)
+                .Title(title)
+                .Publisher(publisher)
+                .publicationDate(publicationDate)
+                .Value(value)
+                .timeLength(timeLength)
                 .build();
 
     }

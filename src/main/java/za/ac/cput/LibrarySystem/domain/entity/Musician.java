@@ -22,6 +22,10 @@ public class Musician {
             this.id = id;
         }
 
+        public Builder() {
+
+        }
+
         public Musician.Builder Name(String name){
             this.name = name;
             return this;

@@ -19,6 +19,9 @@ public class Librarian{
 
     }
 
+    public String getIdString() {
+        return Integer.toString(id);
+    }
 
     public int getId() {
         return id;
