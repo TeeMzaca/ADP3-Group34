@@ -5,6 +5,7 @@ package za.ac.cput.LibrarySystem.repository;
         Date: 8 April 2022
 */
 import za.ac.cput.LibrarySystem.domain.entity.Periodical;
+import za.ac.cput.LibrarySystem.repository.impl.IPeriodicalRepository;
 
 import java.util.HashSet;
 import java.util.Set;

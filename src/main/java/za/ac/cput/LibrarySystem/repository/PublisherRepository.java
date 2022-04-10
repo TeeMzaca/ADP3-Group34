@@ -5,11 +5,12 @@ package za.ac.cput.LibrarySystem.repository;
         Date: 8 April 2022
 */
 import za.ac.cput.LibrarySystem.domain.entity.Publisher;
+import za.ac.cput.LibrarySystem.repository.impl.IPublisherRepository;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class PublisherRepository implements IPublisherRepository{
+public class PublisherRepository implements IPublisherRepository {
     public static PublisherRepository repository = null;
     private Set<Publisher> publisherDB = null;
 

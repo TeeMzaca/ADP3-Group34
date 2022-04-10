@@ -10,7 +10,7 @@ import za.ac.cput.LibrarySystem.repository.IRepository;
 
 import java.util.Set;
 
-public class IMusicAlbumRepository extends IRepository<MusicAlbum, String>{
+public interface IMusicAlbumRepository extends IRepository<MusicAlbum, String>{
     Set<MusicAlbum> getAll();
 
 }

@@ -13,6 +13,10 @@ public class Library{
         this.address = builder.address;
     }
 
+    public String getIdString() {
+        return Integer.toString(id);
+    }
+
     public int getId() {
         return id;
     }

@@ -1,6 +1,6 @@
 package za.ac.cput.LibrarySystem.util;
 
-import org.apache.commons.validator.routines.EmailValidator;
+//import org.apache.commons.validator.routines.EmailValidator;
 
 import java.util.Random;
 
@@ -10,10 +10,10 @@ public class Helper {
         return (s == null || s.equals ("") || s.isEmpty()|| s.equalsIgnoreCase("null"));
     }
 
-    public static boolean isValidEmail(String email){
+    /*public static boolean isValidEmail(String email){
         EmailValidator ev = EmailValidator.getInstance();
         return ev.isValid(email);
-    }
+    }*/
 
     //
     public static String generateId(){

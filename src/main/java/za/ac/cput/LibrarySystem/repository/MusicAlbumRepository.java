@@ -32,17 +32,18 @@ public class MusicAlbumRepository implements IMusicAlbumRepository {
         return album;
     }
 
+
     @Override
-    public MusicAlbum read(Integer id){
+    public MusicAlbum read(String id){
         MusicAlbum album = albumDB.stream()
-                .filter(e -> e.getId().equals(id))
+                .filter(e -> e.getIdString().equals(id))
                 .findAny().orElse(null);
         return album;
     }
 
     @Override
     public MusicAlbum update(MusicAlbum album) {
-        MusicAlbum oldId = read(album.getId());
+        MusicAlbum oldId = read(album.getIdString());
         if (oldId != null) {
             albumDB.remove(oldId);
             albumDB.add(album);
@@ -52,7 +53,7 @@ public class MusicAlbumRepository implements IMusicAlbumRepository {
     }
 
     @Override
-    public boolean delete(Integer id) {
+    public boolean delete(String id) {
         MusicAlbum albumDelete = read(id);
         if(albumDelete == null){
             return false;
