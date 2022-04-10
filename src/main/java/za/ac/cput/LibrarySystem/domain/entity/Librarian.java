@@ -5,7 +5,7 @@ public class Librarian{
     private int id;
     private String firstName;
     private String lastName;
-    private String dob;
+    private date dob;
     private String homeAddress;
 
     //private constructor
@@ -35,11 +35,11 @@ public class Librarian{
         this.lastName = lastName;
     }
 
-    public String getDob() {
+    public date getDob() {
         return dob;
     }
 
-    public void setDob(String dob) {
+    public void setDob(date dob) {
         this.dob = dob;
     }
 
@@ -75,7 +75,7 @@ public class Librarian{
         private int id;
         private String firstName;
         private String lastName;
-        private String dob;
+        private date dob;
         private String homeAddress;
 
         public Builder setId(int id) {
@@ -93,7 +93,7 @@ public class Librarian{
             return this;
         }
 
-        public Builder setDob(String dob) {
+        public Builder setDob(date dob) {
             this.dob = dob;
             return this;
         }
