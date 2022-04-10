@@ -16,7 +16,11 @@ public class Director {
     private String bio;
 
     //Constructor
-
+    private Director(Builder builder){
+        this.id = builder.id;
+        this.firstName = builder.firstName;
+        this.lastName = builder.lastName;
+    }
     //Getters and Setter
     public int getId() {
         return id;
@@ -102,6 +106,17 @@ public class Director {
         public Builder setBio(String bio) {
             this.bio = bio;
             return this;
+        }
+
+        public Builder copy(Director director){
+            this.id = director.id;
+            this.firstName = director.firstName;
+            this.lastName = director.lastName;
+            return this;
+        }
+
+        public Director build(){
+            return new Director(this); //We need to create this constructor
         }
     }
 }
