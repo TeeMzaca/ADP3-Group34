@@ -7,10 +7,12 @@ package za.ac.cput.LibrarySystem.repository;
  */
 
 import za.ac.cput.LibrarySystem.domain.entity.Book;
+import za.ac.cput.LibrarySystem.repository.impl.IBookRepository;
+
 import java.util.HashSet;
 import java.util.Set;
 
-public class BookRepository implements IBookRepository{
+public class BookRepository implements IBookRepository {
     public static BookRepository repository = null;
     private Set<Book> bookDB = null;
 

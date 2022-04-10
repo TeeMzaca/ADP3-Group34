@@ -17,7 +17,7 @@ public class TestItem {
         System.out.println(item.toString());
     }
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         TestBuilder();
-    }
+    }*/
 }
